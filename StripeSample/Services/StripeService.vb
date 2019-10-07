@@ -23,7 +23,7 @@ Public Class StripeService
         Dim options As ChargeCreateOptions = New ChargeCreateOptions() With {
             .Amount = System.Convert.ToInt32((AmountToPay * CDec(100))),
             .Currency = "aud",
-            .Description = "Description to show on receipt sent by Stripe",
+            .Description = "Description to show if receipt sent by Stripe",
             .Source = stripeToken,
             .StatementDescriptor = "Retail Edge" 'Description to show on CC statement (22 chars?)
         }
