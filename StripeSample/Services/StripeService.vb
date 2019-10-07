@@ -17,6 +17,7 @@ Public Class StripeService
             StripeConfiguration.ApiKey = StripeApiSecretKeyDev
         End If
 
+
         Dim chargeService = New ChargeService()
 
         Dim options As ChargeCreateOptions = New ChargeCreateOptions() With {

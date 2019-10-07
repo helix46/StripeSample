@@ -26,6 +26,7 @@ End Structure
 
 Namespace Controllers
     <RoutePrefix("api/stripe")>
+
     Public Class StripeController
         Inherits ApiController
 
